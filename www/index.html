@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+  <head>
+    <title>Akshay 'Shay' Narang</title>
+    <meta charset="utf-8">
+
+    <!-- css stylesheets -->
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/fonts/Orbitron-fontfacekit/stylesheet.css">
+
+    <!-- javascript files -->
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <!--<script type="text/javascript" src="js/jplayer/jquery.jplayer.min.js"></script>-->
+
+    <script>
+      var yourAudio = document.getElementById('bubble');
+      var ctrl = document.getElementById('audioControl');
+
+      $('#audioControl').click(function(){
+
+          // Update the Button
+          var pause = ctrl.innerHTML === 'pause!';
+          ctrl.innerHTML = pause ? 'play!' : 'pause!';
+
+          // Update the Audio
+          var method = pause ? 'pause' : 'play';
+          yourAudio[method]();
+
+          // Prevent Default Action
+          return false;
+
+      });
+    </script>
+  </head>
+
+  <body>
+
+    <div id="one">
+
+      <header>
+        <h1>Akshay 'Shay' Narang</h1>
+      </header>
+
+      <nav id="nav_one">
+        <ul>
+          <li><a href="#one"><img id="question" src="images/question.png" alt="question icon"></a></li>
+          <li><a href="#two"><img id="open_book" src ="images/open_book.png" alt="open book icon"></a></li>
+          <li><a href="#three"><img id="headphones" src="images/headphones.png" alt="headphone icon"></a></li>
+        </ul>
+      </nav>
+
+      <ul id = "icons">
+        <li><a href="http://www.facebook.com"><img id = "facebook" src = "images/facebook.png" alt = "facebook icon"></a></li>
+        <li><a href="http://www.twitter.com"><img id = "twitter" src = "images/twitter.png" alt = "twitter icon"></a></li>
+        <li><a href="http://www.soundcloud.com"><img id = "soundcloud" src = "images/soundcloud.png" alt = "soundcloud icon"></a></li>
+        <li><a href="http://www.vimeo.com"><img id = "vimeo" src = "images/vimeo.png" alt = "vimeo icon"></a></li>
+        <li><a href="http://www.youtube.com"><img id = "youtube" src = "images/youtube.png" alt = "youtube icon"></a></li>
+      </ul>
+
+      <section id="one_content">
+
+        <div id="about_head">
+          <h1>About</h1>
+        </div>
+
+        <div id="about">
+          <p>I am an aspiring <span>software developer</span>.</p>
+          <p>I am a <span>musician</span>.</p>
+          <p>I am a <span>creative individual</span>.</p>
+        </div>
+
+      </section>
+      <!-- end one content -->
+
+    </div>
+
+    <div id="two">
+      <section id="two_content">
+
+        <div id="words_head">
+          <h1>Words</h1>
+        </div>
+
+        <div id="words1">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean enim neque, luctus vel aliquet sed, interdum eleifend orci. Mauris nulla odio, luctus ac imperdiet eu, elementum in diam. Nam dignissim, dolor vel viverra vehicula, lorem nibh sodales elit, ac rutrum tellus purus et sapien. Nullam nec ligula sapien. Sed lorem lacus, iaculis in hendrerit et, tristique ac ligula.</p>
+        </div>
+        <div id="words2">
+          <p>Sed quis sem velit, scelerisque viverra orci. Suspendisse potenti. Sed neque ante, tristique id aliquam ac, faucibus elementum metus. Nam sed mi erat. Vestibulum sed ante sit amet erat ullamcorper aliquam. Suspendisse volutpat, ante eget cursus fringilla, mi nunc iaculis tellus, non laoreet arcu erat nec ligula. Suspendisse eleifend, urna sed posuere iaculis, risus erat dignissim nibh, porttitor condimentum sapien mi et elit. Nunc vitae dui libero.</p>
+
+        </div>
+        <div id="words3">
+          <p>Pellentesque lobortis, ante pharetra pellentesque tincidunt, turpis risus cursus orci, lacinia tristique enim felis nec dolor. Vivamus est erat, luctus convallis commodo ac, volutpat in nibh. Integer risus tellus, vestibulum in faucibus et, interdum eget enim. Ut nisi tellus, varius eu pellentesque vitae, condimentum non urna. Fusce sit amet tortor nunc. Curabitur in ultricies ante. Sed quis felis sit amet arcu adipiscing pharetra vitae eu odio.</p>
+
+        </div>
+
+        <!-- <div id="words_foot">
+          <img id = "words_up" src = "images/up.png" alt = "up arrow icon"></a>
+          <img id = "words_down" src = "images/down.png" alt = "down arrow icon"></a>
+        </div> -->
+
+      </section>
+
+    </div>
+
+    <div id="three">
+
+      <section id="three_content">
+
+        <div id="sounds_head">
+          <h1>Sounds</h1>
+        </div>
+
+        <div id="sounds">
+            <h2>The Wans - I Like To Party (<span>CaramelFace Remix</span>)</h2>
+            <h2>The Wans - Shoot For The Thrill (<span>CaramelFace Remix</span>)</h2>
+            <h2>Sarah and Lindsay - Backbone (<span>CaramelFace Remix</span>)</h2>
+            <h2>Sarah and Lindsay - I'm Not Going Anywhere (<span>CaramelFace Remix</span>)</h2>
+            <h2>Honest Engine - Carousel (<span>CaramelFace Remix</span>)</h2>
+            <h2>Honest Engine - Paper Wings (<span>CaramelFace Remix</span>)</h2>
+            <h2>Robert Parker Vaughan - Hurtful Words (<span>CaramelFace Remix</span>)</h2>
+            <h2>Brian Vaughn - Mountain (<span>CaramelFace Remix</span>)</h2>
+        </div>
+
+        <!-- <div id="sounds">
+          <iframe width="100%" height="137" scrolling="no" frameborder="no" src="http://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F39073393&amp;auto_play=false&amp;show_artwork=false&amp;color=0000FF"></iframe>
+          <iframe width="100%" height="137" scrolling="no" frameborder="no" src="http://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F39072591&amp;auto_play=false&amp;show_artwork=false&amp;color=0000FF"></iframe>
+        </div> -->
+
+      </section>
+
+    </div>
+
+  </body>
+</html>

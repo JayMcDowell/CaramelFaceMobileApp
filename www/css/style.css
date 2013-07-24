@@ -1,0 +1,225 @@
+html {
+  width: 300%;
+  height: 100%;
+}
+
+body {
+  height: 100%;
+}
+
+#words2, #words3 {
+  display: none;
+}
+
+#one, #two, #three {
+  float: left;
+  width: 33.33333%;
+  height: 100%;
+  box-shadow: 0px 0px 0px 15px black inset;
+}
+
+.onebgcolor, .twobgcolor, .threebgcolor {
+  box-shadow: 0px 0px 0px 3px black inset;
+}
+
+#one, .onebgcolor {
+  /* Safari 4-5, Chrome 1-9 */
+  background: -webkit-radial-gradient(circle, #FF3100, #2F2727);
+
+  /* Safari 5.1+, Chrome 10+ */
+  background: -webkit-radial-gradient(circle, #FF3100, #2F2727);
+
+  /* Firefox 3.6+ */
+  background: -moz-radial-gradient(circle, #FF3100, #2F2727);
+
+  /* IE 10 */
+  background: -ms-radial-gradient(circle, #FF3100, #2F2727);
+}
+
+#two, .twobgcolor {
+  /* Safari 4-5, Chrome 1-9 */
+  background: -webkit-gradient(radial, center center, 0, center center, 460, from(#1a82f7), to(#2F2727));
+
+  /* Safari 5.1+, Chrome 10+ */
+  background: -webkit-radial-gradient(circle, #1a82f7, #2F2727);
+
+  /* Firefox 3.6+ */
+  background: -moz-radial-gradient(circle, #1a82f7, #2F2727);
+
+  /* IE 10 */
+  background: -ms-radial-gradient(circle, #1a82f7, #2F2727);
+}
+
+#three, .threebgcolor {
+  /* Safari 4-5, Chrome 1-9 */
+  background: -webkit-radial-gradient(circle, #00B64F, #2F2727);
+
+  /* Safari 5.1+, Chrome 10+ */
+  background: -webkit-radial-gradient(circle, #00B64F, #2F2727);
+
+  /* Firefox 3.6+ */
+  background: -moz-radial-gradient(circle, #00B64F, #2F2727);
+
+  /* IE 10 */
+  background: -ms-radial-gradient(circle, #00B64F, #2F2727);
+}
+
+header {
+  position: fixed;
+  margin: 2% 0% 0% 2%;
+  width: 215px;
+  height: 50px;
+  text-align: center;
+  box-shadow: 0px 0px 0px 5px black inset;
+  background: rgba(248, 248, 255, 0.4);
+}
+
+header h1 {
+  position:fixed;
+  color: black;
+  font-family: 'OrbitronBlack', courier;
+  letter-spacing: 2px;
+  font-size: 12px;
+  padding: 4.5% 2%;
+  text-shadow: 1px -1px 1px lightgray;
+}
+
+.soundsheader {
+  position:fixed;
+  width: 215px;
+  height: 50px;
+  padding-bottom: 1%;
+  width: 27%;
+  height: 10%;
+}
+
+nav {
+  margin: 2% 0% 0% 0%;
+  width: 31%;
+  height: 50px;
+  position: fixed;
+  margin-left: 67%;
+  box-shadow: 0px 0px 0px 5px black inset;
+  background: rgba(248, 248, 255, 0.4);
+}
+
+nav>ul {
+  padding: 5% 4% 5% 6%;
+}
+
+nav>ul>li {
+  display: inline-block;
+  width: 30%;
+  text-align: center;
+}
+
+#question, #open_book, #headphones {
+  width: 60%;
+}
+
+#icons {
+  position: fixed;
+  height: 8%;
+  width: 96%;
+  margin: 90% 0% 0% 2%;
+  padding: 0.1%;
+  box-shadow: 0px 0px 0px 5px black inset;
+  background: rgba(248, 248, 255, 0.4);
+}
+
+#icons>li {
+  display: inline;
+  margin: 7.5%;
+}
+
+#facebook, #twitter, #vimeo, #youtube, #myspace, #soundcloud {
+  margin-top: 0.5%;
+  height: 80%;
+  width: 4%;
+}
+
+#topline, #bottomline {
+  width: 300%;
+  border-top: 1px solid white;
+}
+
+#one_content, #two_content, #three_content {
+  width: 60%;
+  margin-left: 20%;
+}
+
+#one_content {
+  margin-top: 18%;
+}
+
+#two_content {
+  margin-top: 13.5%;
+}
+
+#three_content {
+  margin-top: 14.5%;
+}
+
+#about_head, #words_head, #sounds_head {
+  font-family: 'OrbitronBold', courier;
+  letter-spacing: 2px;
+  font-size: 200%;
+  padding: 2% 31%;
+  margin-top: -40px;
+  text-align: center;
+  text-shadow: 2px -1px 3px grey;
+}
+
+#about_head h1, #words_head h1, #sounds_head h1 {
+  padding: 7.5% 5% 5% 5%;
+  background: white;
+  color: black;
+}
+
+#about, #words1, #words2, #words3, #sounds {
+  background: black;
+  color: white;
+  overflow: hidden;
+  padding: 1% 5%;
+  border: 1px solid white;
+  font-size: 80%;
+  font-family: 'OrbitronLight', courier;
+}
+
+#about {
+  letter-spacing: 2px;
+  line-height: 200%;
+  text-align: center;
+}
+
+#words1, #words2, #words3 {
+  letter-spacing: 2px;
+  line-height: 135%;
+}
+
+#sounds {
+  letter-spacing: 1px;
+  line-height: 175%;
+  text-align: center;
+}
+
+#words_up, #words_down, #about_head h1, #words_head h1, #sounds_head h1 {
+  background: white;
+  box-shadow: 0px 0px 0px 2px black inset;
+}
+
+#words_up:active, #words_down:active {
+  background: white;
+  box-shadow: inset 0px 0px 10px 1px;
+  border-radius: 15px;
+}
+
+#words_foot {
+  padding: 1% 0.5%;
+  text-align: center;
+}
+
+#words_up, #words_down {
+  height: 5%;
+  width: 5%;
+};
